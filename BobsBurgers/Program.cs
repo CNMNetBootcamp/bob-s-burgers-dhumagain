@@ -26,7 +26,7 @@ namespace BobsBurgers
             grandTotal = taxTotal + subTotal;
 
             //output
-
+//TODO refactor this, this should be in the method below and when it is and working I can show you how it will simplify your code
             if (burgers > 0)
                 Console.WriteLine("Total number of burgers ordered is " + burgers + " at $" + burgers * 2.99f);
 
@@ -53,6 +53,7 @@ namespace BobsBurgers
             {
                 do
                 {
+                    //TDOD: refactor this into its own method
                     Console.WriteLine(" Please select the number from following items:\n" +
                         " 1)Burgers $2.99 \n" +
                         " 2)Fries $1.99 \n" +
@@ -66,7 +67,7 @@ namespace BobsBurgers
                     }
 
                 } while (orderNumber < 1 || orderNumber > 4);
-
+//todo refactor this into its own method
                 do
                 {
                     Console.WriteLine("Please enter the quantity of this item ");
